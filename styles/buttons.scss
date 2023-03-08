@@ -21,8 +21,8 @@
   &:hover,
   &:active,
   &:focus {
-    border-color: var(--violet-color);
-    background-color: var(--violet-color);
+    border-color: var(--violett-color);
+    background-color: var(--violett-color);
     color: var(--white-color);
 
     svg {
@@ -38,8 +38,8 @@
   }
 
   &_active {
-    border-color: var(--violet-color);
-    background-color: var(--violet-color);
+    border-color: var(--violett-color);
+    background-color: var(--violett-color);
     color: var(--white-color);
 
     svg {
@@ -52,7 +52,7 @@
     padding: 0 calc(var(--gap) * 1.5);
   }
 
-  @media (min-width: v.$tablet) {
+  @media (min-width: v.$bigger-tablet) {
     --size: 40px;
   }
 
