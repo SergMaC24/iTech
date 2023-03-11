@@ -22,13 +22,16 @@
     left: 0;
     right: 50%;
     bottom: 0;
-    background-image: url("assets/images/initial/notero-web.png");
-    @include mixins.background-image("assets/images/initial/notero-web.png");
+    @include mixins.background-image(
+      $image: "assets/images/initial/notero-web.png",
+      $size: contain
+      );
+      z-index: -1;
   }
 
   &__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--gap);
 
     @media (min-width: v.$desktop) {
