@@ -35,6 +35,32 @@
     align-items: flex-start;
   }
 
+  &__icons {
+    display: flex;
+    gap: 45px;
+    @media (min-width: v.$bigger-mobile) {
+      gap: 35px;
+    }
+
+    &__left,
+    &__right {
+      width: 130px;
+    }
+
+    &__left {
+      border-right: 1px solid var(--grey-color);
+    }
+
+    img,
+    p {
+      margin-bottom: 7px;
+    }
+
+    img {
+      height: 66px;
+    }
+  }
+
   &__buttons {
     display: flex;
     gap: var(--gap);
